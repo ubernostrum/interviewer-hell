@@ -61,6 +61,6 @@ interviewing life.
 In the file ``iterator.py`` is an implementation that uses Python's
 ``itertools`` module to construct a lazy infinite iterable that yields
 correct values, then slices off the first 100. It is a fully general
-FizzBuzz solver, and you can invoke its ``make_fizzbuzz()`` functino
+FizzBuzz solver, and you can invoke its ``make_fizzbuzz()`` function
 with a dictionary mapping integers to the strings which should be
 printed on multiples of those integers.
