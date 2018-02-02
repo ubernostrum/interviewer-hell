@@ -1,5 +1,5 @@
 """
-Determines whether a given integer is a perfect suqare, without using
+Determines whether a given integer is a perfect square, without using
 sqrt() or multiplication.
 
 This works because the square of an integer, n, is the sum of the
