@@ -9,12 +9,12 @@ import itertools
 import operator
 
 
-make_fizzbuzz = lambda mod_map: map(
+make_fizzbuzz = lambda mod_map, start: map(
     lambda tup: functools.reduce(operator.add, tup[1]) or tup[0],
     enumerate(
         zip(
             *(itertools.cycle([""] * (k - 1) + [v]) for k, v in mod_map.items())
-        ), 1
+        ), start
     )
 )
 
@@ -27,7 +27,7 @@ if __name__ == '__main__':
             make_fizzbuzz({
                 3: 'Fizz',
                 5: 'Buzz',
-            }),
+            }, 1),
             100
     ):
         print(result)
