@@ -51,7 +51,7 @@ Strategy/dependency-injection approach got to about ten classes before
 I got tired of writing it and decided to just link a proper
 implementation in this README.
 
-So there are two solutions presented here, of slightly lower fun value..
+So there are two solutions presented here, of slightly lower fun value.
 
 In the file ``unrolled.py`` is a highly-optimized implementation of
 FizzBuzz, transpiled from a solution in C with
