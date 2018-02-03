@@ -68,11 +68,12 @@ to ASCII letters in ascending order; instead the most common English
 letters are assigned the lowest-valued primes.
 
 A fun followup discussion is how the German letter "ß" should be
-handled, especially in light of the normalization to uppercase used in
-this implementation. Historically, this letter did not have an
-uppercase form, and in many modern programming languages it still
-uppercases to "SS", which means that ``"straße"`` and ``"strasse"``
-will be treated as anagrams (since both normalize to ``"STRASSE"``).
+handled in a fully Unicode-aware followup question, especially in
+light of the normalization to uppercase used in this
+implementation. Historically, this letter did not have an uppercase
+form, and in many modern programming languages it still uppercases to
+"SS", which means that ``"straße"`` and ``"strasse"`` will be treated
+as anagrams (since both normalize to ``"STRASSE"``).
 
 Credit goes to `this tweet from Fermat's Library
 <https://twitter.com/fermatslibrary/status/958700402647674880>`_ for
