@@ -20,7 +20,7 @@ def is_palindrome(s):
     """
     normalized = ''.join(
         c for c in 
-        unicodedata.normalize('NFC', s.lower())
+        unicodedata.normalize('NFC', s.casefold())
         if unicodedata.category(c).startswith('L')
     )
     graphemes = [
