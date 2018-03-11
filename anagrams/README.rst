@@ -29,9 +29,9 @@ fashion. This is an acceptable solution.
 
 In the Python standard library, you can also use
 ``collections.Counter`` as a histogram data structure, feeding strings
-into instances of ``Counter`` to deterine what letters are in them and
-how many occurrences there are of each letter. Which leads to an easy
-implementation (presuming some suitable normalization done before
+into instances of ``Counter`` to determine what letters are in them
+and how many occurrences there are of each letter. Which leads to an
+easy implementation (presuming some suitable normalization done before
 invoking ``is_anagram()``)::
 
     from collections import Counter
@@ -73,7 +73,9 @@ light of the normalization to uppercase used in this
 implementation. Historically, this letter did not have an uppercase
 form, and in many modern programming languages it still uppercases to
 "SS", which means that ``"straße"`` and ``"strasse"`` will be treated
-as anagrams (since both normalize to ``"STRASSE"``).
+as anagrams (since both normalize to ``"STRASSE"``). Bonus points if
+you launch into a discussion of case folding as the proper
+pre-normalization technique.
 
 Credit goes to `this tweet from Fermat's Library
 <https://twitter.com/fermatslibrary/status/958700402647674880>`_ for
