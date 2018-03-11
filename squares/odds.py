@@ -5,8 +5,8 @@ sqrt() or multiplication.
 This works because the square of an integer, n, is the sum of the
 first n consecutive odd integers. Various itertools functions are used
 to generate a lazy iterable of odd integers and a running sum of them,
-until either the given integer is found as a sum or at least n odd
-integers have been consumed.
+until either the given integer is found as a sum or the sum has
+exceeded n.
 
 """
 
