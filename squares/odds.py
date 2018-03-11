@@ -22,9 +22,9 @@ class SquareTests(unittest.TestCase):
     def test_squares(self):
         for i in range(1, 101):
             if i in (1, 4, 9, 16, 25, 36, 49, 64, 81, 100):
-                self.assertTrue(is_square(i))
+                assert is_square(i)
             else:
-                self.assertFalse(is_square(i))
+                assert not is_square(i)
 
 
 if __name__ == '__main__':
