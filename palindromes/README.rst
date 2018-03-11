@@ -60,7 +60,7 @@ Here are a few of the potential issues:
   scripts, which gives an opportunity to talk about normalization. The
   code point approach still isn't perfect, though, as there are plenty
   of strings which are visually palindromes, but are not palindromes
-  form when considered as sequences of code points, even after
+  when considered as sequences of code points, even after
   normalization. Many non-Latin scripts are this way; Korean is
   probably the ultimate torture test for a palindrome detector.
 
