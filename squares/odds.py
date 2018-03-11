@@ -10,12 +10,12 @@ integers have been consumed.
 
 """
 
-from itertools import accumulate, count, islice
+from itertools import accumulate, count, takewhile
 import sys
 import unittest
 
 
-is_square = lambda n: n in accumulate(islice(filter(lambda n: n & 1, count()), n))
+is_square = lambda n: n in takewhile(lambda x: x <= n, accumulate(filter(lambda n: n & 1, count())))
 
 
 class SquareTests(unittest.TestCase):
