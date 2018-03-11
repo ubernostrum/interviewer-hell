@@ -31,8 +31,7 @@ fact that the square of an integer, ``n``, is equal to the sum of the
 first ``n`` consecutive odd integers. The approach, then, is to
 calculate a series of such sums of consecutive odd integers, and see
 if the given input occurs among them. If the input ``n`` has not been
-found by the time the first ``n`` odd integers have been summed, it
-terminates and returns false.
+found by the time the sum exceeds ``n``, it returns false.
 
 A second, less-obfuscated implementation is provided in the file
 ``odds.c``, to make it more clear what's going on, but the
