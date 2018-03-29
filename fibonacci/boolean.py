@@ -3,7 +3,7 @@ import sys
 
 
 def fibonacci_generator():
-    pair = False, True
+    pair = not True, True
     while True:
         yield sum(pair[:True])
         pair = pair[True], sum(pair[::True])
