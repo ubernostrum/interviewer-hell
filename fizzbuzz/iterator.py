@@ -13,7 +13,10 @@ make_fizzbuzz = lambda mod_map, start: map(
     lambda tup: functools.reduce(operator.add, tup[1]) or tup[0],
     enumerate(
         zip(
-            *(itertools.cycle([""] * (k - 1) + [v]) for k, v in mod_map.items())
+            *map(
+                lambda tup: itertools.cycle([""] * (tup[0] - 1) + [tup[1]]),
+                mod_map.items()
+            )
         ), start
     )
 )
@@ -23,11 +26,9 @@ make_fizzbuzz = lambda mod_map, start: map(
 # "Buzz" on multiples of 5, "FizzBuzz" on multiples of both 3 and 5,
 # number otherwise for numbers 1-100.
 if __name__ == '__main__':
-    for result in itertools.islice(
-            make_fizzbuzz({
-                3: 'Fizz',
-                5: 'Buzz',
-            }, 1),
-            100
-    ):
-        print(result)
+    print("\n".join(map(str, itertools.islice(
+        make_fizzbuzz({
+            3: 'Fizz',
+            5: 'Buzz',
+        }, 1),
+        100))))

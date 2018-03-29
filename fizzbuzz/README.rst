@@ -64,3 +64,8 @@ correct values, then slices off the first 100. It is a fully general
 FizzBuzz solver, and you can invoke its ``make_fizzbuzz()`` function
 with a dictionary mapping integers to the strings which should be
 printed on multiples of those integers.
+
+Also, since an original justification of FizzBuzz was to test whether
+candidates could write a ``for`` loop, buth solutions presented here
+avoid the ``for`` keyword, and in fact avoid all use of Python loop
+constructs.
