@@ -1,3 +1,12 @@
+"""
+Fibonacci number generator.
+
+This relies on the fact that Python's boolean type is a subclass of
+int, and so instances of ``bool`` can be used anywhere an ``int`` can
+be.
+
+"""
+
 from itertools import islice
 import sys
 
