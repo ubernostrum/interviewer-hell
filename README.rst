@@ -41,9 +41,9 @@ move on to the next stage!**
 
 Thanks for the vote of confidence. But, while I think I *am* qualified
 to work as a programmer -- and have been doing so, at companies large
-and small, for many years -- I still sometimes freeze up on phone
-screens. In fact, `among candidates who get the highest average
-ratings on interviewing.io, fully one-third bomb at least one
+and small, for many years -- I still sometimes freeze up in
+interviews. And I'm not alone: `among candidates who get the highest
+average ratings on interviewing.io, fully one-third bomb at least one
 interview
 <http://blog.interviewing.io/you-cant-fix-diversity-in-tech-without-fixing-the-technical-interview/>`_. The
 way to fix this is not to put up with it; the way to fix this is to
