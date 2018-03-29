@@ -76,12 +76,11 @@ solutions using Python 3.6.
 
 **I've seen some of these before! Why didn't you credit people?**
 
-All the code in this repository (at least, as of when it was first
-published) was written by me without reference to any other
-solutions. When relevant I've credited sources for the first place I
-saw a particular idea. But great minds tend to think alike, as the
-saying goes, and I wouldn't be surprised to find someone else coming
-up with similar solutions to stock problems.
+When the basic idea that led to one of the solutions here came from
+someone else, I've credited it; all the code in this repository,
+however, was written by me. But great minds tend to think alike, as
+the saying goes, and I wouldn't be surprised to find someone else
+coming up with similar solutions to stock problems.
 
 
 **Can I contribute a new question or a new solution to this repository?**
