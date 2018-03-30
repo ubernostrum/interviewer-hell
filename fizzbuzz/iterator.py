@@ -11,15 +11,10 @@ import operator
 
 make_fizzbuzz = lambda mod_map, start: map(
     lambda tup: functools.reduce(operator.add, tup[1]) or tup[0],
-    enumerate(
-        zip(
-            *map(
-                lambda tup: itertools.cycle([""] * (tup[0] - 1) + [tup[1]]),
-                mod_map.items()
-            )
-        ), start
-    )
-)
+    enumerate(zip(*map(
+        lambda tup: itertools.cycle([""] * (tup[0] - 1) + [tup[1]]),
+        mod_map.items()
+    )), start))
 
 
 # Implement the "standard" FizzBuzz: print "Fizz" on multiples of 3,
