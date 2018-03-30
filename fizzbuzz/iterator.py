@@ -21,5 +21,4 @@ print("\n".join(map(str, islice(
     make_fizzbuzz({
         3: 'Fizz',
         5: 'Buzz',
-    }, 1),
-    100))))
+    }, 1), 100))))
