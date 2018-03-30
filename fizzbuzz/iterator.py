@@ -17,13 +17,9 @@ make_fizzbuzz = lambda mod_map, start: map(
     )), start))
 
 
-# Implement the "standard" FizzBuzz: print "Fizz" on multiples of 3,
-# "Buzz" on multiples of 5, "FizzBuzz" on multiples of both 3 and 5,
-# number otherwise for numbers 1-100.
-if __name__ == '__main__':
-    print("\n".join(map(str, itertools.islice(
-        make_fizzbuzz({
-            3: 'Fizz',
-            5: 'Buzz',
-        }, 1),
-        100))))
+print("\n".join(map(str, itertools.islice(
+    make_fizzbuzz({
+        3: 'Fizz',
+        5: 'Buzz',
+    }, 1),
+    100))))
