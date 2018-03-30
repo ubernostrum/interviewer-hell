@@ -66,6 +66,6 @@ with a dictionary mapping integers to the strings which should be
 printed on multiples of those integers.
 
 Also, since an original justification of FizzBuzz was to test whether
-candidates could write a ``for`` loop, both solutions presented here
-avoid not only the ``for`` keyword, but all of Python's control-flow
-keywords.
+candidates could write a ``for`` loop and ``if`` statements, both
+solutions presented here avoid not only the ``for`` keyword, but all
+of Python's control-flow keywords.
