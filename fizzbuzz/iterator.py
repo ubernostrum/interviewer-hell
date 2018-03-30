@@ -4,20 +4,20 @@ values, then slicing off as much as is desired.
 
 """
 
-import functools
-import itertools
-import operator
+from functools import reduce
+from itertools import cycle, islice
+from operator import add
 
 
 make_fizzbuzz = lambda mod_map, start: map(
-    lambda tup: functools.reduce(operator.add, tup[1]) or tup[0],
+    lambda tup: reduce(add, tup[1]) or tup[0],
     enumerate(zip(*map(
-        lambda tup: itertools.cycle([""] * (tup[0] - 1) + [tup[1]]),
+        lambda tup: cycle([""] * (tup[0] - 1) + [tup[1]]),
         mod_map.items()
     )), start))
 
 
-print("\n".join(map(str, itertools.islice(
+print("\n".join(map(str, islice(
     make_fizzbuzz({
         3: 'Fizz',
         5: 'Buzz',
