@@ -17,7 +17,7 @@ make_fizzbuzz = lambda mod_map, start: map(
     )), start))
 
 
-print("\n".join(map(str, islice(
+print('\n'.join(map(str, islice(
     make_fizzbuzz({
         3: 'Fizz',
         5: 'Buzz',
