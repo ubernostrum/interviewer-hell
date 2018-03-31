@@ -10,9 +10,9 @@ from operator import add
 
 
 make_fizzbuzz = lambda mod_map, start: map(
-    lambda tup: reduce(add, tup[1]) or tup[0],
+    lambda t: reduce(add, t[1]) or t[0],
     enumerate(zip(*map(
-        lambda tup: cycle([""] * (tup[0] - 1) + [tup[1]]),
+        lambda t: cycle([""] * (t[0] - 1) + [t[1]]),
         mod_map.items()
     )), start))
 
