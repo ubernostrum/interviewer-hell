@@ -11,15 +11,13 @@ your language's sqrt() function."
 Some variations also disallow use of multiplication or exponentiation
 operators.
 
-This is almost a pure shibboleth question; the interviewer is waiting
-for you to regurgitate `Newton's method
-<https://en.wikipedia.org/wiki/Newton%27s_method>`_.
-
 
 The expected solution
 ---------------------
 
-See above; they want you to come up with Newton's method.
+This is almost a pure shibboleth question; the interviewer is waiting
+for you to regurgitate `Newton's method
+<https://en.wikipedia.org/wiki/Newton%27s_method>`_.
 
 
 The fun solution
