@@ -18,15 +18,17 @@ def is_palindrome(s):
     Determines whether a given string is a palindrome.
 
     """
-    normalized = ''.join(
-        c for c in 
-        unicodedata.normalize('NFC', s.casefold())
-        if unicodedata.category(c).startswith('L')
-    )
     graphemes = [
-        g for g in regex.findall(r'(\X)', normalized)
+        g for g in regex.findall(
+            r'(\X)',
+            ''.join(
+                c for c in 
+                unicodedata.normalize('NFC', s.casefold())
+                if unicodedata.category(c).startswith('L')
+            )
+        )
     ]
-    return graphemes == graphemes[::-1]
+    return graphemes and graphemes == graphemes[::-1]
 
 
 class PalindromeTests(unittest.TestCase):
@@ -44,6 +46,8 @@ class PalindromeTests(unittest.TestCase):
 
     def test_non_palindrome(self):
         for p in (
+                '',
+                ',!?',
                 'not',
                 'Able was I, ere I saw Elbe.',
                 unicodedata.normalize('NFKC', '\ufdfa'),
