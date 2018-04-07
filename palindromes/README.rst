@@ -62,7 +62,11 @@ Here are a few of the potential issues:
   of strings which are visually palindromes, but are not palindromes
   when considered as sequences of code points, even after
   normalization. Many non-Latin scripts are this way; Korean is
-  probably the ultimate torture test for a palindrome detector.
+  probably the ultimate torture test for a palindrome detector. While
+  you're at it, talk about how the normalization routine can't just
+  use a set of ASCII letters and punctuation, and can't use
+  ``upper()`` or ``lower()``, but has to actually understand Unicode
+  categories and do case-folding.
 
 * And then you bring out the big gun: graphemes. All the issues
   discussed above are due to the mismatch between how humans visually
