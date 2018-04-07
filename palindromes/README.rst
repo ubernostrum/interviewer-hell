@@ -12,8 +12,9 @@ that string is a palindrome, false otherwise."
 
 This is one of those "prove you're diligent by asking questions about
 scope" problems where you're supposed to "wonder" whether whitespaces,
-case differences and punctuation matter. They do, always, but you have
-to ask to get the full marks.
+case differences and punctuation matter. The solution given here
+ignores whitespace, case and puncatuation, since palindrome checkers
+are almost always supposed to ignore them.
 
 
 The expected solution
