@@ -24,7 +24,7 @@ def is_palindrome(s):
         if unicodedata.category(c).startswith('L')
     )
     graphemes = [
-        g for g in regex.split(r'(\X)', normalized) if g
+        g for g in regex.findall(r'(\X)', normalized)
     ]
     return graphemes == graphemes[::-1]
 
