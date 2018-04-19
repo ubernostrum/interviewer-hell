@@ -3,6 +3,10 @@
 
 
 int is_square(int n) {
+  if(n < 1) {
+    return 0;
+  }
+
   long total = 0;
   int next = 1;
 

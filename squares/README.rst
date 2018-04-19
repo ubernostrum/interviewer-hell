@@ -23,13 +23,13 @@ for you to regurgitate `Newton's method
 The fun solution
 ----------------
 
-The file ``odds.py`` in this directory implements
-square-detection in a deliberately obfuscated way. It relies on the
-fact that the square of an integer, ``n``, is equal to the sum of the
-first ``n`` consecutive odd integers. The approach, then, is to
-calculate a series of such sums of consecutive odd integers, and see
-if the given input occurs among them. If the input ``n`` has not been
-found by the time the sum exceeds ``n``, it returns false.
+The file ``odds.py`` in this directory implements square-detection in
+a deliberately obfuscated way. It relies on the fact that the square
+of a natural number, ``n``, is equal to the sum of the first ``n``
+consecutive odd natural numbers. The approach, then, is to calculate a
+series of sums of consecutive odd integers, and see if the given input
+occurs among them. If the input ``n`` has not been found by the time
+the sum exceeds ``n``, it returns false.
 
 A second, less-obfuscated implementation is provided in the file
 ``odds.c``, to make it more clear what's going on, but the
