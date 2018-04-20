@@ -4,8 +4,8 @@ sqrt() or multiplication.
 
 This works because the square of a natural number, n, is the sum of
 the first n consecutive odd natural numbers. Various itertools
-functions are used to generate a lazy iterable of odd integers and a
-running sum of them, until either the given integer is found as a sum
+functions are used to generate a lazy iterable of odd numbers and a
+running sum of them, until either the given input is found as a sum
 or the sum has exceeded n.
 
 """
