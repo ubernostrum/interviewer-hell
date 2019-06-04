@@ -6,8 +6,8 @@ This works by assigning each ASCII letter in a string to a prime
 number, and determining the resulting product for the
 string. Comparing the products for two strings indicates whether they
 are anagrams. Per the fundamental theorem of arithmetic, prime
-factorization of a composite number is unique, so only two strings
-whose sets of letters are identical will yield the same product.
+factorization is unique, so only two strings whose sets of letters are
+identical will yield the same product.
 
 """
 
