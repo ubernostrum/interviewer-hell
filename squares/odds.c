@@ -3,8 +3,14 @@
 
 
 int is_square(int n) {
-  if(n < 1) {
+  // Negative numbers aren't squares.
+  if(n < 0) {
     return 0;
+  }
+
+  // Zero is a square.
+  if(n == 0) {
+    return 1;
   }
 
   long total = 0;

@@ -15,7 +15,11 @@ import sys
 import unittest
 
 
-is_square = lambda n: n > 0 and n in takewhile(lambda x: x <= n, accumulate(filter(lambda n: n & 1, count())))
+is_square = (
+    lambda n: n == 0
+    or n > 0
+    and n in takewhile(lambda x: x <= n, accumulate(filter(lambda n: n & 1, count())))
+)
 
 
 class SquareTests(unittest.TestCase):
@@ -27,7 +31,7 @@ class SquareTests(unittest.TestCase):
                 assert not is_square(i)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     if len(sys.argv) != 2:
         sys.exit(unittest.main())
     value = None
@@ -39,5 +43,3 @@ if __name__ == '__main__':
         print("{} is a square.".format(value))
     else:
         print("{} is not a square.".format(value))
-
-        
