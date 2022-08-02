@@ -1,16 +1,17 @@
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 
-int is_square(int n) {
+bool is_square(int n) {
   // Negative numbers aren't squares.
   if(n < 0) {
-    return 0;
+    return false;
   }
 
   // Zero is a square.
   if(n == 0) {
-    return 1;
+    return true;
   }
 
   long total = 0;
@@ -24,7 +25,7 @@ int is_square(int n) {
     next += 2;
   }
 
-  return 0;
+  return false;
 }
 
 
