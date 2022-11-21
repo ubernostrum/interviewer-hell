@@ -59,5 +59,5 @@ one-liner in Haskell, for example.
 
 For languages with fixed-size integral types, overflow is a
 concern. Whatever type you're asked to check, use a wider type to
-store your running sum in (i.e., the provided C implementation checks
-an ``int`` and so uses a ``long`` for the running sum).
+store your running sum in (i.e., the provided Java implementation
+checks an ``int`` and so uses a ``long`` for the running sum).
