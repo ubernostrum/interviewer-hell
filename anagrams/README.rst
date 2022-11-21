@@ -45,10 +45,10 @@ This is also an acceptable solution.
 The fun solution
 ----------------
 
-The file ``primes.py`` in this directory uses the same *principle* --
-creating a unique signature for each word, based on which letters it
-contains and how many times each letter occurs -- but takes a numeric,
-rather than string-oriented, approach.
+The file ``is_anagram.py`` in this directory uses the same *principle*
+-- creating a unique signature for each word, based on which letters
+it contains and how many times each letter occurs -- but takes a
+numeric, rather than string-oriented, approach.
 
 The ``is_anagram()`` function there maps each uppercase ASCII letter
 to a prime number, which allows a string to be converted into a list

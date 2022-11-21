@@ -2,20 +2,14 @@
 Determines whether a given integer is a perfect square, without using
 sqrt() or multiplication.
 
-This works because the square of a natural number, n, is the sum of
-the first n consecutive odd natural numbers. Various itertools
-functions are used to generate a lazy iterable of odd numbers and a
-running sum of them, until either the given input is found as a sum
-or the sum has exceeded n.
-
 """
 
-from itertools import accumulate, count, takewhile
 import sys
+import typing
 import unittest
+from itertools import accumulate, count, takewhile
 
-
-is_square = (
+is_square: typing.Callable[[int], bool] = (
     lambda n: n == 0
     or n > 0
     and n in takewhile(lambda x: x <= n, accumulate(filter(lambda n: n & 1, count())))

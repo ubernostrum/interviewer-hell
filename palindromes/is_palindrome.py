@@ -1,8 +1,8 @@
 """
 Determines whether a string is a palindrome.
 
-Requires the third-party 'regex' library; to obtain, 'pip install
-regex'. See https://pypi.python.org/pypi/regex for details.
+Requires the third-party "regex" library; to obtain, "pip install
+regex". See https://pypi.python.org/pypi/regex for details.
 
 """
 
@@ -13,18 +13,18 @@ import unittest
 import regex
 
 
-def is_palindrome(s):
+def is_palindrome(s: str) -> bool:
     """
     Determines whether a given string is a palindrome.
 
     """
     graphemes = [
         g for g in regex.findall(
-            r'(\X)',
-            ''.join(
+            r"(\X)",
+            "".join(
                 c for c in 
-                unicodedata.normalize('NFC', s.casefold())
-                if unicodedata.category(c).startswith('L')
+                unicodedata.normalize("NFC", s.casefold())
+                if unicodedata.category(c).startswith("L")
             )
         )
     ]
@@ -34,28 +34,28 @@ def is_palindrome(s):
 class PalindromeTests(unittest.TestCase):
     def test_palindromes(self):
         for p in (
-                'racecar',
-                'tacocat',
-                'Able was I, ere I saw Elba.',
-                'A man, a plan, a canal: Panama!',
-                'an\u0303a',
-                'a\u00f1a',
-                '\ufdfa',
+                "racecar",
+                "tacocat",
+                "Able was I, ere I saw Elba.",
+                "A man, a plan, a canal: Panama!",
+                "an\u0303a",
+                "a\u00f1a",
+                "\ufdfa",
         ):
             self.assertTrue(is_palindrome(p))
 
     def test_non_palindrome(self):
         for p in (
-                '',
-                ',!?',
-                'not',
-                'Able was I, ere I saw Elbe.',
-                unicodedata.normalize('NFKC', '\ufdfa'),
+                "",
+                ",!?",
+                "not",
+                "Able was I, ere I saw Elbe.",
+                unicodedata.normalize("NFKC", "\ufdfa"),
         ):
             self.assertFalse(is_palindrome(p))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     if len(sys.argv) != 2:
         sys.exit(unittest.main())
     if is_palindrome(sys.argv[1]):

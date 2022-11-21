@@ -1,24 +1,24 @@
 """
 Fibonacci number generator.
 
-This relies on the fact that Python's boolean type is a subclass of
-int, and so instances of ``bool`` can be used anywhere an ``int`` can
-be.
-
 """
 
-from itertools import islice
 import sys
+from itertools import islice
 
 
 def fibonacci_generator():
+    """
+    Generator which yields Fibonacci numbers, in order.
+
+    """
     pair = not True, True
     while True:
         yield sum(pair[:True])
         pair = pair[True], sum(pair[::True])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     value = None
     try:
         value = int(sys.argv[True])

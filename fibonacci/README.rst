@@ -30,9 +30,9 @@ n)`` time) is faster than the iterative solution (``O(n)`` time) and
 The fun solution
 ----------------
 
-The file ``boolean.py`` in this directory implements a Fibonacci
-sequence generator via the iterative algorithm, but uses no explicit
-arithmetic operators and no integer literals.
+The file ``fibonacci_generator.py`` in this directory implements a
+Fibonacci sequence generator via the iterative algorithm, but uses no
+explicit arithmetic operators and no integer literals.
 
 The implementation abuses a historical quirk of the language. Python
 originally lacked a boolean type, and most Python programmers used

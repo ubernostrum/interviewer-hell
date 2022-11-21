@@ -58,7 +58,7 @@ FizzBuzz, transpiled from a solution in C with
 ``-funroll-loops``. It's perfect for the speed freak in your
 interviewing life.
 
-In the file ``iterator.py`` is an implementation that uses Python's
+In the file ``fizzbuzz.py`` is an implementation that uses Python's
 ``itertools`` module to construct a lazy infinite iterable that yields
 correct values, then slices off the first 100. It is a fully general
 FizzBuzz solver, and you can invoke its ``make_fizzbuzz()`` function
