@@ -28,8 +28,8 @@ square-detection in a deliberately obfuscated way. It relies on the
 fact that the square of a natural number, ``n``, is equal to the sum
 of the first ``n`` consecutive odd natural numbers. The approach,
 then, is to calculate a series of sums of consecutive odd integers,
-and see if the given input occurs among them. If the input ``n`` has
-not been found by the time the sum exceeds ``n``, it returns false.
+and see if the given input occurs among them. If the input has not
+been found by the time the sum exceeds the input, it returns false.
 
 A second, less-obfuscated implementation is provided in the file
 ``SquareDetector.java``, but the Python solution should be preferred
