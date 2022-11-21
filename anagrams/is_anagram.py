@@ -12,8 +12,6 @@ import unittest
 
 
 CHAR_MAP = dict(
-    # Assign primes to letters, with lowest-valued primes assigned to
-    # most-common letters in English.
     zip("ETAOINSHRDLUCMFYWGPBVKXQJZ",
         [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43,
          47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101]
