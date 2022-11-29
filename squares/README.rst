@@ -22,8 +22,8 @@ for approximating a square root.
 
 But more recently, this apparently has become popular as a test to see
 if somoene will think to use binary search to quickly work through the
-space of possible square roots of the input and test each one. Here's
-a simple Python implementation::
+space of possible square roots of the input. Here's a simple Python
+implementation::
 
     def is_square(n):
         lower, upper = 0, n
