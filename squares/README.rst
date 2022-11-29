@@ -34,6 +34,7 @@ implementation::
             if check == n:
                 return True
             lower, upper = (lower, candidate - 1) if check > n else (candidate + 1, upper)
+            
         return False
 
 
