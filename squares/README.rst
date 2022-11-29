@@ -21,7 +21,7 @@ shibboleth question, where the interviewer wanted to hear about
 for approximating a square root.
 
 But more recently, this apparently has become popular as a test to see
-if somoene will think to use binary search to quickly work through the
+if someone will think to use binary search to quickly work through the
 space of possible square roots of the input. Here's a simple Python
 implementation::
 
