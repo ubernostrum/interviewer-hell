@@ -15,9 +15,26 @@ operators.
 The expected solution
 ---------------------
 
-This is almost a pure shibboleth question; the interviewer is waiting
-for you to regurgitate `Newton's method
-<https://en.wikipedia.org/wiki/Newton%27s_method>`_.
+I haven't seen this one for a while, and when I did it was a pure
+shibboleth question, where the interviewer wanted to hear about
+`Newton's method <https://en.wikipedia.org/wiki/Newton%27s_method>`_
+for approximating a square root.
+
+But more recently, this apparently has become popular as a test to see
+if somoene will think to use binary search to quickly work through the
+space of possible square roots of the input and test each one. Here's
+a simple Python implementation::
+
+    def is_square(n):
+        lower, upper = 0, n
+
+        while lower <= upper:
+            candidate = (lower + upper) // 2
+            check = candidate ** 2
+            if check == n:
+                return True
+            lower, upper = (lower, candidate - 1) if check > n else (candidate + 1, upper)
+        return False
 
 
 The fun solution
