@@ -49,9 +49,8 @@ then, is to calculate a series of sums of consecutive odd integers,
 and see if the given input occurs among them. If the input has not
 been found by the time the sum exceeds the input, it returns false.
 
-A second, less-obfuscated implementation is provided in the file
-``SquareDetector.java``, but the Python solution should be preferred
-whenever possible.
+A C# implementation using a similar iterator-based approach is
+provided in teh file ``SquareDetector.cs``.
 
 The primary source of fun here is in showing off Python's lazy
 iterables, and the useful functions in the ``itertools`` module. The
@@ -77,5 +76,5 @@ one-liner in Haskell, for example.
 
 For languages with fixed-size integral types, overflow is a
 concern. Whatever type you're asked to check, use a wider type to
-store your running sum in (i.e., the provided Java implementation
-checks an ``int`` and so uses a ``long`` for the running sum).
+store your running sum in (i.e., the provided C# implementation checks
+an ``int`` and so uses a ``long`` for the running sum).
